@@ -90,3 +90,48 @@ INNER JOIN genders AS g
 ON e.gender_id = g.gender_id 
 INNER JOIN countries c ON e.country_id = c.country_id AND c.country_id BETWEEN 2 AND 4
 GROUP BY  1,2 
+
+-- get genders count from costarica an kazakhstan
+SELECT c.country_desc , g.gender_desc , count(1)
+FROM employees AS e
+INNER JOIN genders AS g 
+ON e.gender_id = g.gender_id 
+INNER JOIN countries c ON e.country_id = c.country_id AND c.country_id BETWEEN 6 AND 7
+GROUP BY  1
+
+--- get data from kazakhstan an palestina group by department and gender  + count
+SELECT c.country_desc , d.department_name ,g.gender_desc , count(1)
+FROM employees AS e
+INNER JOIN genders AS g 
+ON e.gender_id = g.gender_id 
+INNER JOIN countries c ON e.country_id = c.country_id AND c.country_id BETWEEN 5 AND 6
+INNER  JOIN departments d ON e.department_id = d.department_id 
+GROUP BY  1,2
+
+--- get data to consume in python
+
+SELECT e.first_name , e.last_name , 
+		e.salary , c.company_name , 
+		d.department_name , g.gender_desc , 
+		j.job_desc , c2.country_desc ,
+		e.date_hire
+FROM employees AS e
+INNER JOIN companies c ON e.company_id = c.company_id 
+INNER JOIN departments d  ON e.department_id = d.department_id 
+INNER JOIN genders g ON e.gender_id = g.gender_id 
+INNER JOIN jobs j ON e.job_id = j.job_id 
+INNER JOIN countries c2 ON e.country_id = c2.country_id 
+
+--- creating table as select
+CREATE TABLE data_to_python
+SELECT e.first_name , e.last_name , 
+		e.salary , c.company_name , 
+		d.department_name , g.gender_desc , 
+		j.job_desc , c2.country_desc ,
+		e.date_hire
+FROM employees AS e
+INNER JOIN companies c ON e.company_id = c.company_id 
+INNER JOIN departments d  ON e.department_id = d.department_id 
+INNER JOIN genders g ON e.gender_id = g.gender_id 
+INNER JOIN jobs j ON e.job_id = j.job_id 
+INNER JOIN countries c2 ON e.country_id = c2.country_id 
