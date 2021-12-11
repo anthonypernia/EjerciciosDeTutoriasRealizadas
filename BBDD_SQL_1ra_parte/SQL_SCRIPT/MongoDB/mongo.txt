@@ -1,0 +1,38 @@
+- Crear base
+use acme_company
+
+- Ver bases creadas
+show dbs
+
+- Crear collecciones
+db.createCollection("employees")
+
+- Ver colecciones creadas
+show collections
+
+- Insertar datos
+db.employees.insertMany([
+    {"name":"juan", "apellido": "perez", "description" : "game developer", "age":29},
+    {"name":"pedro", "apellido": "hernendez", "description" : "backend developer", "age":31},
+    {"name":"anthony", "apellido": "pernia", "description" : "data developer", "age":30}
+])
+
+
+- Ver datos
+db.employees.find().pretty()
+
+
+- Contar datos
+db.employees.countDocuments()
+
+
+- Insertar uno en coll 
+db.employees.insertOne({"name":"santiago", "apellido": "pernia", "description" : "cualquier cosa", "age":32})
+
+- Buscar uno por nombre especifico 
+db.employees.findOne({"name":"anthony"})
+
+- Listando age menor 30
+db.employees.find({"age" : {$lt : 30} })
+
+db.employees.find({"age" : {$lte : 30} })

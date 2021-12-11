@@ -1,3 +1,4 @@
+use acme_company;
 create table employees (
 	employee_id INT auto_increment PRIMARY KEY NOT NULL,
 	first_name VARCHAR(50),
