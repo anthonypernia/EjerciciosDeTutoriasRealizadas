@@ -38,3 +38,9 @@ let multiplicacion = 1 * 2;
 let division = 1 / 2;
 let modulo = 1 % 2;
 console.log(suma, resta, multiplicacion, division, modulo);
+
+//promt 
+//let nombre_2 = prompt("Ingrese su nombre");
+//console.log(nombre_2);
+
+
