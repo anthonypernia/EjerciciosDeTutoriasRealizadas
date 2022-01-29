@@ -1,5 +1,11 @@
 
 
+
+//uso de console.log
+// todo lo que este entre el parentesis es lo que se imprime en la consola
+console.log("Hola gente");
+
+
 //comentario de linea
 
 /* mas de una lInea 
@@ -43,4 +49,34 @@ console.log(suma, resta, multiplicacion, division, modulo);
 //let nombre_2 = prompt("Ingrese su nombre");
 //console.log(nombre_2);
 
+
+let numeroPrimo = 3;
+let dos = 2;
+const PI = 3.1416;
+
+
+let sumaDENumeros = numeroPrimo + dos;
+
+console.log(sumaDENumeros);
+
+//alert, se usa para mostrar un mensaje en pantalla
+//alert("esto es una alerta");
+
+//ejemplo de prompt y alert
+//let entrada = prompt("Ingrese su nombre");
+//let salida = "Hola " + entrada;
+//alert(salida);dgdgd
+
+
+///parseando promts a enteros
+let edad_1 = prompt("Ingrese su edad");
+let edad_2 = parseInt(edad_1);
+console.log(edad_2);
+
+//parseando promts a flotantes
+let peso = prompt("Ingrese su peso");
+let peso_2 = parseFloat(peso);
+console.log(peso_2);
+
+alert(edad_2 + peso_2);
 
