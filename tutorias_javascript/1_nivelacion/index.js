@@ -42,7 +42,7 @@ let suma = 1 + 2;
 let resta = 1 - 2;
 let multiplicacion = 1 * 2;
 let division = 1 / 2;
-let modulo = 1 % 2;
+let modulo = 10 % 4;
 console.log(suma, resta, multiplicacion, division, modulo);
 
 //promt 
