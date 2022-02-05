@@ -1,10 +1,10 @@
-let compramosComida = true;
+// let compramosComida = false;
 
-if (compramosComida) {
-    console.log('compramos comida');
-}else{
-    console.log('no compramos comida');
-}
+// if (compramosComida) {
+//     console.log('compramos comida');
+// }else{
+//     console.log('no compramos comida');
+// }
 
 // let compramosCafe = false;
 // let compramosMate = true;
@@ -27,7 +27,7 @@ if (compramosComida) {
 
 // let nombre = 'Juan';
 
-// if (nombre === 'Juan') {
+// if (nombre == 'Juan') {
 //     console.log('eres Juan');
 // }
 
@@ -101,27 +101,27 @@ if (compramosComida) {
 // }while(cantidadDeRepeticiones2 > 0);
 
 
-// let numero = 5;
+let numero = 50;
 
-// switch(numero){
-//     case 1:
-//         console.log('uno');
-//         break;
-//     case 2:
-//         console.log('dos');
-//         break;
-//     case 3:
-//         console.log('tres');
-//         break;
-//     case 4:
-//         console.log('cuatro');
-//         break;
-//     case 5:
-//         console.log('cinco');
-//         break;
-//     default:
-//         console.log('no es un numero valido');
-// }
+switch(numero){
+    case 1:
+        console.log('uno');
+        break;
+    case 2:
+        console.log('dos');
+        break;
+    case 3:
+        console.log('tres');
+        break;
+    case 4:
+        console.log('cuatro');
+        break;
+    case 5:
+        console.log('cinco');
+        break;
+    default:
+        console.log('no es un numero valido');
+}
 
 // console.log('----con break')
 // let nombre2 = 'Antnoio';
@@ -136,30 +136,30 @@ if (compramosComida) {
 //         console.log('no eres Juan ni Antnoio');
 // }
 
-// console.log('----sin break')
-// let nombre3 = 'Antnoio';
-// switch(nombre3){
-//     case 'Antnoio':
-//         console.log('eres Antnoio');
-//     case 'Juan':
-//         console.log('eres Juan');
-//     default:
-//         ///esto lo va a ejecutar
-//         console.log('no eres Juan ni Antnoio');
-// }
+console.log('----sin break')
+let nombre3 = 'Antnoio';
+switch(nombre3){
+    case 'Antnoio':
+        console.log('eres Antnoio');
+    case 'Juan':
+        console.log('eres Juan');
+    default:
+        ///esto lo va a ejecutar
+        console.log('no eres Juan ni Antnoio');
+}
 
-// let hola = 'HolA';
-// let holaUpper = hola.toUpperCase();
-// console.log(holaUpper);
-// let holaLower = hola.toLowerCase();
-// console.log(holaLower);
-// let variableCualquiera = ''
+let hola = 'HolA';
+let holaUpper = hola.toUpperCase();
+console.log(holaUpper);
+let holaLower = hola.toLowerCase();
+console.log(holaLower);
+let variableCualquiera = ''
 
-// for(let i = 0 ; i<19; i+=2){
-//     console.log(i)
-// }
+for(let i = 0 ; i<19; i+=2){
+    console.log(i)
+}
 
-// for(let i = 0 ; i<19; i+=3){
-//     console.log(i)
-// }
+for(let i = 0 ; i<19; i+=3){
+    console.log(i)
+}
 
