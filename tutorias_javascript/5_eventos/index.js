@@ -59,11 +59,14 @@ formulario.addEventListener('submit', function(e){
 })
 
 
-
-
-
-
-
-
-
-
+let imagen = document.getElementById('imagen')
+//change atributo src
+imagen.setAttribute('src', 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png')
+imagen.addEventListener('mouseover', function(e){
+    imagen.style.width = '200px'
+    imagen.style.height = '200px'
+})
+imagen.addEventListener('mouseout', function(e){
+    imagen.style.width = '100px'
+    imagen.style.height = '100px'
+})
