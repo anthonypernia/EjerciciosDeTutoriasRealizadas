@@ -9,6 +9,9 @@ console.log(texto1)
 /// obtengo el elemento mediante la clase
 let textoclass = document.getElementsByClassName('textoclass')
 console.log(textoclass)
+for(let i = 0; i < textoclass.length; i++){
+    console.log(textoclass[i])
+}
 //// le cambio el texto al elemento
 texto1.innerHTML = 'Nuevo texto'
 ///cambio color
