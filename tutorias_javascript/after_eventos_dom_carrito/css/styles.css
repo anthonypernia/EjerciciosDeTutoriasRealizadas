@@ -1,0 +1,34 @@
+
+.main-container, .search-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container{
+  width: 30%;
+  height: 30%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-card{
+  width: 100%;
+  height: 100%;
+}
+
+.button-card{
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
