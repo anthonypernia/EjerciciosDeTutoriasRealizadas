@@ -1,17 +1,33 @@
 
-let nombre = prompt("¿Cómo te llamas?");
+divEjemplo = document.getElementById("ejemplo");
 
-for(let i = 0 ; i < 50 ; i++){
-    console.log(`Hola ${nombre}`);
+products = [
+    {
+        "name": "Product 1",
+        "price": 100
+    },
+    {
+        "name": "Product 2",
+        "price": 200
+    },
+    {
+        "name": "Product 3",
+        "price": 300
+    }
+];
+
+function showProduct(name, price) {
+    console.log(name);
+    console.log(price);
 }
 
-let edad = prompt("dime tu edad");
-alert(`Tu edad es ${edad}`);
-
-let edadNumero = parseInt(edad);
-
-if (edadNumero > 18){
-    alert("Eres mayor de edad");
-}else{
-    alert("eres menor")
+function showAllProducts() {
+    divEjemplo.innerHTML = "";
+    products.forEach((product) => {
+        
+        divEjemplo.innerHTML += `<p>${product.name} - ${product.price}</p>
+        <button onclick="showProduct('${product.name}', '${product.price}')">Show</button>`;
+    });
 }
+
+document.addEventListener("DOMContentLoaded", showAllProducts);
