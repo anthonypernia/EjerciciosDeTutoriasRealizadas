@@ -1,0 +1,25 @@
+Accuracy:
+Accuracy = (TP+TN)/(TP+FP+FN+TN)
+El Accuracy es la proporción de resultados verdaderos entre el número total de casos examinados.
+
+Precisión:
+Precision = (TP)/(TP+FP)
+Proporción de  Positivos pronosticados que  es verdaderamente Positivo.
+
+Recall:
+Recall = (TP)/(TP+FN)
+Proporción de  Positivos reales que se clasifica correctamente
+
+Especificidad:
+Specificity = (TN)/(FP+TN)
+Proporción de Negativos pronosticados que  es verdaderamente Negativo.
+
+F1:
+Es un equilibrio entre la precisión y el recall. Si su precisión es baja, el F1 es bajo y si la recall es baja nuevamente, su puntaje F1 es bajo.
+F1 = 2*(Precision*Recall)/(Precision+Recall)
+
+
+Si usted es un inspector de policía y quiere atrapar criminales, quiere estar seguro de que la persona que atrapa es un criminal (Precisión) y también quiere capturar a tantos criminales (Recall) como sea posible. La puntuación de F1 gestiona esta compensación.
+
+
+https://www.kdnuggets.com/2019/10/5-classification-evaluation-metrics-every-data-scientist-must-know.html
